@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>actor</title>
+<style>
+  *{
+    margin:0;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+    color:blue;
+  }
+  a:active{
+    text-decoration: underline;
+  }
+ .container{
+   display: grid;
+   grid-template-columns: 1fr 3fr 1fr;
+   grid-template-rows: 210px 1fr;
+   }
+   .subject{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    border-bottom:1px solid black;
+    padding-top: 50px;
+    font-size: 30px;
+    }
+   .leftside{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    border-right:1px solid black;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    font-size: 30px;
+    }
+    .center{
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     text-align: center;
+     border-right:1px solid black;
+     padding-top: 10px;
+     padding-bottom: 100px;
+     font-size: 20px;
+     }
+    .rightside{
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     text-align: center;
+     padding-top: 50px;
+     padding-bottom: 300px;
+     font-size: 30px;
+     }
+     img{
+       float:left;
+       padding-left: 30px;
+       padding-right: 50px;
+     }
+     h2{
+       font-style: oblique;
+     }
+     span{
+       color:blue;
+     }
+     #actress{
+       padding-left: 80px;
+       padding-right: 80px;
+     }
+</style>
+</head>
+
+<body>
+  <input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';
+  ">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';
+  ">
+
+<div class="container">
+  <div class="subject">
+    <h1><a href="index.html">Jullia Roberts</a></h1>
+  </div>
+
+  <div class="leftside">
+    <h2 style="font-size:23px; margin-bottom:30px; margin-top:15px;">프로필 관련 링크</h2>
+    <p style="font-size:15px;"><span>[1]</span><a href="https://namu.wiki/w/%EC%97%90%EB%A6%AD%20%EB%A1%9C%EB%B2%84%EC%B8%A0" target="_blank">에릭 로버츠(1956년생)</a><Br><Br>
+    <span>[2]</span><a href="https://ko.wikipedia.org/wiki/%EB%9D%BC%EC%9D%BC_%EB%A1%9C%EB%B2%B3" target="_blank">라일 로벳(1993 – 1995)</a><Br><Br>
+    <span>[3]</span><a href="https://en.wikipedia.org/wiki/Daniel_Moder" target="_blank">대니엘 모더(2002 – )</a><Br><Br>
+    <span>[4]</span><a href="https://namu.wiki/w/%EC%97%A0%EB%A7%88%20%EB%A1%9C%EB%B2%84%EC%B8%A0" target="_blank">엠마 로버츠</a></p>
+  </div>
+
+  <div class="center">
+    <img src="3.jpg" style="width:350px;">
+    <h2 style="margin-bottom:30px; text-align:left;">Julia Roberts</h2>
+    <p style="text-align:left;">본명: Julia Fiona Roberts(줄리아 피오나 로버츠)<Br>
+       국적: 미국<Br>
+       출생: 1967년 10월 28일 (52세) 조지아 주 스머나<Br>
+       직업: 배우, 프로듀서<Br>
+       활동: 1987년 – 현재<Br>
+       종교: 힌두교<Br>
+       신체: 175cm, 58kg, A형<Br>
+       가족: <Br><span>[1]</span>오빠 에릭 로버츠(1956년생)<Br>
+             <span>[2]</span>배우자 라일 로벳(1993 – 1995)<Br>
+             <span>[3]</span>배우자 대니엘 모더(2002 – )</p>
+             <br><br><br><br><br><br>
+    <p style="margin-left:40px; margin-right:40px;">미국 여배우로 1990년대~2000년대 할리우드를 휩쓴 톱배우이자 슈퍼스타이다.
+      아직도 미국에서 아메리칸 스윗하트하면 <em>줄리아 로버츠</em>가 대명사로 쓰인다.
+      역대 피플지 선정 가장 아름다운 여성 최다 지명자이며 미국이 사랑하는 배우 투표에
+      최근까지 항상 상위권에 언급되는 배우이다.</p>
+    <p style="margin-left:40px; margin-right:40px; margin-top:40px;">1967년 조지아 주에서 태어났다. 어릴 적 꿈은 수의사였으나,
+      저널리즘을 공부했다. 그 후, 뉴욕으로 이사해 1987년 본격적으로 연기를 시작했다. 10년 이상 배우로서 길을 걸어온 오빠인
+      <span>[1]</span>에릭 로버츠 영향도 컸지만 오빠는 90년대 와서 그냥 그런 저예산 단골배우로 활동 중이다.</p>
+    <p style="margin-left:40px; margin-right:40px; margin-top:40px;"> 귀여운 여인으로 슈퍼스타가 되기전에 줄리아는 떠오르는
+      신성 연기파 배우였다. <스틸 매그놀리아>에서 신인으로 믿기 힘든 탁월한 연기로 골든글로브 여우조연상 수상, 아카데미 여우조연상 후보에 올랐다.</p>
+    <p style="margin-left:40px; margin-right:40px; margin-top:40px;">이후 1990년에 리처드 기어랑 나온 영화 <귀여운 여인>이 제작비
+      40배가 넘는 경이적인 흥행 대박을 거두며 23살 나이로 일약 할리우드 탑스타가 되었다.<br> 전형성을 띈 신데렐라 스토리의 로맨스
+      영화지만 <em>줄리아 로버츠</em>의 시원한 미소와 밝고 명랑한 매력으로 관객들에게 큰 어필을 했고, 단숨에 전세계적인 스타가 되었다.</p>
+    <p style="margin-left:40px; margin-right:40px; margin-top:40px;">그 다음 해에 나온 스릴러 <strong><적과의 동침></strong>도 흥행과 비평에서 성공했고
+      1997년 그녀의 또 다른 로맨틱 코미디 대표작인 <내 남자친구의 결혼식>은 4000만불의 제작비로 3억불의 성적을 기록하며 북미,
+      전세계 그 해 박스오피스 탑10을 기록하였다. 이 작품은 아직도 <em>줄리아 로버츠</em>하면 세손가락 안에 드는 작품이며 그녀의 출연만으로
+      박스오피스 흥행을 담보할 수 있는 대체불가한 스타 배우로 만들어주었다.</p>
+    <p style="margin-left:40px; margin-right:40px; margin-top:40px;">1998년 수잔 서랜든과 출현한 <스텝맘> 또한 1억 달러 흥행을 하며
+      꾸준한 티켓 파워를 과시했다. 1999년에는 귀여운 여인 감독 게리 마셜, 리처드 기어와 다시 만난 로맨틱 코미디 <런어웨이 브라이드>도 세계적인 대박을 기록하였다.</p>
+    <p style="margin-left:40px; margin-right:40px; margin-top:40px;">그리고 <em>줄리아 로버츠</em> 하면 떠오르는 명작인 휴 그랜트랑 나온
+      <strong><노팅 힐></strong>도 초대박을 거둬들이며 <em>줄리아 로버츠</em>를 헐리웃 대표 여배우의 자리를 공고히하고
+      이후 <에린 브로코비치>를 통해 여배우 최초로 2000만불을 받았다. 또한, <모나리자 스마일>에서는 2500만불을 받아
+      당대 최고 대우를 받았다.</p>
+    <p style="margin-left:40px; margin-right:40px; margin-top:40px;">꾸준히 연기활동을 하고 있지만 2010년 영화
+        <strong><먹고 기도하고 사랑하라></strong> 이후 영화들이 연이어 기대 이하 흥행을 보이고 있다. 그렇다고 쫄딱 망한 건 아니고 그냥 본전치기 정도나
+      기대에 못 미친 흥행이 많다는 것. 2017년 영화 <원더>로 호평과 함께 간만에 1억 달러 흥행작를 만들어 냈다. 2019년 미스터리 드라마 <홈커밍> 시즌1에서 주연을 맡았다.</p>
+
+   <h2 style="margin-bottom:50px; margin-top:80px;">기타</h2>
+       <ul style="text-align:left; margin-left:50px; margin-right:50px; font-size:18px;">
+         <li>왼손잡이 이다.</li>
+         <li>코가 아름답기로 유명하다. 일본에서 실시한 앙케트-성형수술로 닮고 싶은 부위에서 코 부분 1위 차지.</li>
+         <li>이 상당히 큰 편이다. 그래서 캐리커처 등을 보면 이 큰 입을 강조한 경우가 많다.</li>
+         <li>배우로 활동 중인 <span>[4]</span>엠마 로버츠가 <em>줄리아 로버츠</em>의 조카이다.</li>
+         <li>연기 면에서는 호탕하게 웃어제끼는 게 트레이드 마크.
+         아카데미 시상식에 4번 노미네이트 되었고, 여우주연상을 1번 수상했다.</li>
+         <li>스윗한 대중적 이미지와는 전혀 대비되는 행동을 한 불륜녀이다. 사실 헐리웃 사정을 좀 안다면 그녀가 거의 불륜의 여왕이라는 것을 알 것이다.
+           유부남이었던 키퍼 서덜랜드에게 접근하는 것을 시작으로 해서, 이미 결혼한 남성을 여러번 빼앗았다. 그녀의 현재 남편인 다니엘 모더와는 영화 멕시칸을 촬영하면서 만났는데
+           문제는 그가 결혼한 유부남이었던 것. 그럼에도 <em>줄리아 로버츠</em>는 이에 굴하지 않고 그의 아내였던 베라 스팀버그를 찾아가 집요하게 이혼을 종용하며 계속해서 다니엘 모더를 만났다.
+           결국 이 두 사람에 대한 상처와 충격으로 베라는 유산을 하게 되고 이혼도장을 찍어준다. 후에 베라는 어느 인터뷰에서 <em>줄리아 로버츠</em>를 남편 도둑이라 칭하며 심경을 토로했는데
+           다음 날 로버츠가 A low vera(저급한 베라. 발음은 영어로 알로에베라를 말할 때와 비슷하다.)라고 적혀진 티셔츠를 입고 나오면서 베라를 조롱하였다.
+           다니엘 데이 루이스와 이자벨 아자니가 결별한 데에도 <em>줄리아 로버츠</em>가 끼어 있다는 소리가 많다. 최종적으로는 아서 밀러의 딸인 레베카 밀러와 결혼했다.
+         <li>피플지에 가장 아름다운 여성'을 총 5번(1991·2000·2005·2010·2017)을 선정되기도 했다.</li>
+       </ul>
+  </div>
+
+  <div class="rightside">
+    <h2 style="font-size:23px; margin-bottom:30px; margin-top:15px;">그외 좋아하는 여배우</h2>
+      <ol id="actress" style="font-size:15px;">
+        <li><a href="https://namu.wiki/w/%EB%B8%94%EB%A0%88%EC%9D%B4%ED%81%AC%20%EB%9D%BC%EC%9D%B4%EB%B8%94%EB%A6%AC" target="_blank">
+블레이크 라이블리</a></li>
+        <li><a href="https://namu.wiki/w/%EC%85%80%EB%A0%88%EB%82%98%20%EA%B3%A0%EB%A9%94%EC%A6%88" target="_blank">셀레나 고메즈</li>
+        <li><a href="https://namu.wiki/w/%EC%8A%A4%EC%B9%BC%EB%A0%9B%20%EC%9A%94%ED%95%9C%EC%8A%A8" target="_blank">스칼렛 요한슨</li>
+    </ol>
+  </div>
+
+  <div class="footer"></div>
+
+</div>
+</body>
+</html>
