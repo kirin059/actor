@@ -126,7 +126,20 @@
     <h2><a href="work.html">Representative work</a></h2>
   </div>
 
-  <div class="footer"></div>
+  <div class="footer">
+    <script>
+      function button_enent(){
+        if(confirm('go to the next page') == true){
+          location.replace('profile.html');
+
+      } else {
+        return;
+        }
+      }
+    </script>
+
+    <input type="button" value="next" onclick="button_enent()">
+  </div>
 
 
 </div>
