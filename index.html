@@ -12,7 +12,6 @@
   }
   a:hover{
     text-decoration: underline;
-    color:blue;
   }
   a:active{
     text-decoration: underline;
@@ -31,6 +30,8 @@
    border-bottom:1px solid black;
    padding-top: 50px;
    font-size: 30px;
+   background-image:url('bg.jpg');
+   filter: grayscale(100%);
    }
    .left{
     grid-column-start: 1;
@@ -58,7 +59,6 @@
      background-image:url('2.jpg');
      background-repeat : no-repeat;
      background-size : cover;
-     filter: grayscale(100%);
      }
      .footer{
       grid-column-start: 1;
@@ -67,18 +67,51 @@
       grid-row-end: 4;
       border-top:1px solid black;
       }
+      span{
+        width:5px;
+      }
 </style>
 </head>
 
 <body>
+
+
   <input type="button" value="night" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
+  var target=document.querySelector('body');
+  if(this.value==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while ( i < alist.length) {
+      alist[i].style.color = 'powderblue';
+      i = i + 1;
+    }
+
+  } else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while ( i < alist.length) {
+      alist[i].style.color = 'blue';
+      i = i + 1;
+    }
+  }
   ">
-  <input type="button" value="day" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
-  ">
+
+    <script>
+  var addOne=function(x) {
+    var y=x+1;
+    return y;
+  };
+  var A=addOne(9)
+    </script>
+
 
 <div class="container">
   <div class="subject">
@@ -86,14 +119,15 @@
   </div>
 
   <div class="left">
-    <h2><a href="profile.html" style="color:white;"> Profile</a></h2>
+    <h2><a href="profile.html"> Profile</a></h2>
   </div>
 
   <div class="right">
-    <h2><a href="work.html" style="color:white;">Representative work</a></h2>
+    <h2><a href="work.html">Representative work</a></h2>
   </div>
 
   <div class="footer"></div>
+
 
 </div>
 </body>
